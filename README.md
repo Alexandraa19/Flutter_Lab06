@@ -1,17 +1,45 @@
-# quote_app_perekhrest
+# Quote of the Day — Цитата дня
 
-A new Flutter project.
+Приложение показывает случайную мотивирующую цитату при нажатии кнопки. Тема: мотивация и вдохновение.
 
-## Getting Started
+## Автор
+Перехрест [Ваше Имя], группа [Ваша Группа], дата сдачи: [Дата]
 
-This project is a starting point for a Flutter application.
+## Стек и версии
+- Flutter: 3.47.5 
+- Dart: 3.9.0 
+- Платформа: Web (Chrome)
+- IDE: VS Code
 
-A few resources to get you started if this is your first Flutter project:
+## Скриншот
+![Скриншот приложения](img/step6.png)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Структура проекта
+- `lib/main.dart` — точка входа, MaterialApp
+- `lib/quote_data.dart` — модель Quote, список цитат, функция случайного выбора
+- `lib/gradient_background.dart` — StatelessWidget с градиентным фоном
+- `lib/quote_card.dart` — StatelessWidget  цитаты с изображением
+- `lib/quote_screen.dart` — StatefulWidget главный экран с кнопкой
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Что изучили 
+Создание собственных StatelessWidget и передача данных через параметры конструктора.
+
+Использование StatefulWidget и метода setState() для динамического обновления интерфейса.
+
+Работа с градиентами (LinearGradient) для создания кастомного фона.
+
+Подключение и корректное отображение локальных изображений (assets) через файл pubspec.yaml.
+
+Использование генератора случайных чисел (Random) из библиотеки dart:math.
+
+Разбивка кода на отдельные логические файлы для поддержания чистоты архитектуры.
+
+Оформление проекта с помощью системы контроля версий Git и платформы GitHub.
+
+
+## Как запустить
+```bash
+git clone <https://github.com/Alexandraa19/Flutter_Lab06.git>
+cd quote_app_perekhrest
+flutter pub get
+flutter run -d chrome
